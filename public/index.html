@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div id="header">
+        <div class="nav-head">
+            <a href="#">wash&go</a>
+            <button class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- <div class="nav"> -->
+            <ul class="menu">
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#concept">The Concept</a></li>
+                <li class="item"><a href="#howto">How To Use</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+
+    </div>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Self service laundry</h1>
+            <h3>your local laundromat</h3>
+        </div>
+    </section>
+    <section id="concept">
+        <div class="container">
+            <h2 class="title">The Concept</h2>
+            <ul class="icons">
+                <div class="box">
+                    <img src="./style/img/icon1.jpg" alt="">
+                    <p>A completely managed and sustainable service:
+                        from installation and design
+                        to ongoing maintenance</p>
+                </div>
+                <div class="box">
+                    <img src="./style/img/icon2.jpg" alt="">
+                    <p>No capital expenditure for you</p>
+                </div>
+                <div class="box">
+                    <img src="./style/img/icon3.jpg" alt="">
+                    <p>The latest & most sustainable professional washing machines for shared use</p>
+                </div>
+                <div class="box">
+                    <img src="./style/img/icon4.jpg" alt="">
+                    <p>Mobile app for cash free payment</p>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="container">
+            <h2>Wash&Go Laundry Solutions offers housing corporations and universities fully digital and advanced laundry facilities. For residents and students this means that they can do their laundry in an affordable, efficient and sustainable way</h2>
+        </div>
+    </section>
+    <section id="howto">
+        <div class="container">
+            <h2 class="title">How To Use</h2>
+            <div class="steps-tabs">
+                <div class="steps-head">
+                    <span class="tab-toggle is-active">Step 1</span>
+                    <span class="tab-toggle">Step 2</span>
+                    <span class="tab-toggle">Step 3</span>
+                    <span class="tab-toggle">Step 4</span>
+                </div>
+                <div class="step-body">
+                    <div class="step-content is-active">
+                        <img src="./style/img/mobile.avif" alt="">
+                        <p>Download the Wash&Go Laundry Solutions app, follow the easy steps to choose the available machines and programs and complete the payment</p>
+                    </div>
+                    <div class="step-content">
+                        <img src="./style/img/open.jpg" alt="">
+                        <p>Load the laundry in the selected
+                            machine along with a detergent
+                            and close the door</p>
+                    </div>
+                    <div class="step-content">
+                        <img src="./style/img/start.avif" alt="">
+                        <p>Push START button on the machine</p>
+                    </div>
+                    <div class="step-content">
+                        <img src="./style/img/finish.avif" alt="">
+                        <p>Take an advantage of the mobile app – book machines ahead of time, receive reminders when the cycle is about the end save payment details and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+            <h2 class="title">Contact Us</h2>
+            <div class="container">
+            <div class="form-container">
+            <form action="/post" class="contactForm" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name.." required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email.." required>
+                <label for="message">Your message</label>
+                <input type="text" name="message" id="message" placeholder="Your message.." required>
+                <button type="submit" class="btn">
+                    Submit
+                </button>
+            </form>
+
+            <div class="contanct-info">
+                <div class="address">
+                    <h4>Address</h4>
+                    <div class="address-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Narodnog Fronta BB <br>
+                            21000 Novi Sad <br>
+                            Serbia
+                        </p>
+                    </div>
+
+                </div>
+                <div class="number">
+                    <h4>Phone</h4>
+                    <div class="number-content">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+ 381 21 333 555</p>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <h4>Email</h4>
+                    <div class="email-content">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>veseraj@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="location-map">
+                <h2 class="title">Find Us</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.7383025602273!2d19.829921335562823!3d45.23815427128782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b101867a69e43%3A0xf071f77191ef07!2z0J3QsNGA0L7QtNC90L7QsyDRhNGA0L7QvdGC0LAgMTAwLCDQndC-0LLQuCDQodCw0LQgMjExMDI!5e0!3m2!1ssr!2srs!4v1666430630876!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-boxes">
+                <a class="f-logo" href="#">wash&go</a>
+                <ul class="footer-menu">
+                    <li class="f-item"><a href="#home">Home</a></li>
+                    <li class="f-item"><a href="#concept">The Concept</a></li>
+                    <li class="item"><a href="#howto">How To Use</a></li>
+                    <li class="f-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="f-info">
+                    <p>Narodnog Fronta BB <br>
+                        21000 Novi Sad <br>
+                        Serbia
+                    </p>
+                    <p>+ 381 21 333 555</p>
+                    <p>veseraj@gmail.com</p>
+
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
