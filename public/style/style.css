@@ -28,6 +28,14 @@ body::-webkit-scrollbar {
     outline: 1px solid #fff;
   }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
@@ -388,16 +396,16 @@ input{
     justify-content: center;
     text-align: center;
     position: relative;
-    gap: 1rem;
+    gap: 1.8rem;
 }
 
-.footer-boxes .f-logo{
+/* .footer-boxes .f-logo{
     align-self: flex-end;
     position: absolute;
     bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .footer-menu{
     line-height: 1.7rem;
@@ -408,6 +416,53 @@ input{
     font-weight: 500;
 }
 
+.weather{
+    color: #fff;
+}
+
+.city{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    
+}
+
+.city::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.w-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .8rem;
+    font-size: 1rem;
+}
+
+.w-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1rem;
+}
+
+.temperature{
+    font-size: 1.2rem;
+}
+
+.mintemp,
+.maxtemp{
+    font-size: .8rem;
+}
+
+.img-box{
+    width: 9rem;
+    height: 9rem;
+}
 
 .f-info{
     color: #fff;
@@ -435,14 +490,17 @@ input{
 
     .footer-boxes{
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .footer-menu{
         text-align: left;
     }
 
+    .weather{
+        display: flex;
+    }
 
 }
 
@@ -466,8 +524,8 @@ input{
 
     .footer-boxes{
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
 
@@ -551,10 +609,23 @@ input{
         text-align: left;
     }
 
-    .footer-boxes .f-logo{
+    /* .footer-boxes .f-logo{
         align-self: flex-start;
         position: static;
         transform: none;
+    } */
+
+    .footer-boxes{
+        align-items: center;
+    }
+
+    .weather{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .w-right{
+        margin-left: 1.5rem;
     }
 
 }
@@ -577,6 +648,10 @@ input{
 
     .step-content{
         width: 50rem;
+    }
+
+    .footer-boxes{
+        justify-content: space-between;
     }
 
 }
